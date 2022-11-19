@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+/* Paleta de colores y fuente base a utilizar */
+
+* {
+    --charcoal: #434A56ff;
+    --silver: #C6C6BDff;
+    --eggplant: #634E57ff;
+    --charcoal-2: #40464Cff;
+    --silver-pink: #C5B0A2ff;
+
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+/* Fuentes insertadas */
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.titillium {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Configuración base */
+
+/* Smooth scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fuentes */
+
+h1 {
+    font-size: 4vh;
+    line-height: 200%;
+}
+
+h4 {
+    font-size: 1.2vh;
+    line-height: 200%;
+}
+
+.h3.titillium {
+    margin-top: 10em;
+}
+
+p {
+    font-size: 1.5vh;
+}
+
+/* Iconos */
+
+.material-icons {
+    font-size: 5vh;
+    color: black;
+}
+
+.material-icons:hover {
+    transition: 1.5s ease-in-out;
+    transform: scale(1.05);
+    color: grey;
+}
+
+/*Botón de volver arriba*/
+
+.volver {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+
+#IconVolver {
+    font-size: 3vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Comienza el diseño*/
+
+/* Eliminamos márgenes por defecto*/
+
+.row {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Configuración de cada fila*/
+
+.row.Barra {
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0.5em 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.row.Principal,
+.row.Presentacion,
+.row.Caracteristicas,
+.row.Beneficios,
+.row.Compra,
+.row.Contacto {
+    height: 100vh;
+}
+
+.row.Caracteristicas {
+    justify-content: center;
+}
+
+.row.Beneficios {
+    justify-content: center;
+}
+
+.row.Compra {
+    height: 90vh;
+    width: 90vw;
+    margin-top: 2em;
+    justify-content: center;
+    background: rgb(33, 38, 59);
+    background: linear-gradient(90deg, rgba(33, 38, 59, 1) 0%, rgba(130, 73, 82, 1) 50%, rgba(154, 158, 150, 1) 100%);
+    box-shadow: 0 -0.5em 8px 0 rgba(22, 22, 26, 0.18);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+.row.Contacto {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.row.Footer {
+    height: 8vh;
+    align-items: center;
+    padding: 1em;
+    text-align: end;
+    color: white;
+    box-shadow: 0 -0.5em 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+/* Diseño row Principal */
+
+/* .container-fluid.Menu {} */
+
+.nav {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.navbar {
+    width: 100vw;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+}
+
+.navbar-toggler {
+    margin-right: 1em;
+}
+
+.nav-item a {
+    margin-left: 2em;
+}
+
+.container-fluid.Iconos {
+    margin: auto;
+    height: 10vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0.0px;
+    margin-left: 0.0px;
+    display: flex;
+    justify-content: center;
+}
+
+.Icono {
+    height: 10vh;
+    width: 15vh;
+    margin-top: 6em;
+    text-align: center;
+}
+
+.container-fluid.Inicio {
+    background-image: url("../img/Fondo.jpeg");
+    background-size: auto 105vh;
+    color: white;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: -0.5em 0 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.Gancho1 {
+    display: flex;
+    height: 20vh;
+    margin-top: 40vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--eggplant);
+    opacity: 50%;
+}
+
+.Gancho2 {
+    display: flex;
+    height: 20vh;
+    margin-top: -20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Diseño row Presentación */
+
+.container-fluid.ImgPres {
+    margin: auto;
+    height: 50vh;
+    background-image: url("../img/Presentacion.jpg");
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-position: center left -200px;
+    color: white;
+}
+
+.container-fluid.ContPres {
+    height: 50vh;
+    text-align: center;
+}
+
+.Fila {
+    justify-content: center;
+    /* align-items: center; */
+    height: calc(50vh/3);
+}
+
+#titulo {
+    height: 10vh;
+}
+
+/* Diseño row Características */
+
+.carousel {
+    width: 90vw;
+    height: 100vh;
+    margin-top: 20vh;
+}
+
+.carousel-inner {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+    width: 90vw;
+    padding: 1em;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 60vh;
+    width: 90vw;
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    text-align: center;
+}
+
+.card-header {
+    background-color: var(--silver-pink);
+}
+
+.card-header span {
+    font-size: 6vh;
+}
+
+.card img {
+    margin: auto;
+    margin-top: 2em;
+    height: 30vh;
+    max-width: fit-content;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+.card p {
+    margin-top: 2em;
+    font-size: 2vh;
+}
+
+/* Diseño row Beneficios */
+
+.Wrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 0;
+    height: 100vh;
+    width: 90vw;
+}
+
+.container-fluid.PrimBen {
+    margin: auto;
+    margin-bottom: 0;
+    height: 50vh;
+    width: 90vw;
+    background-image: url("../img/Beneficio1.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0.5em -0.5em 8px rgba(22, 22, 26, 0.18);
+    transition: 0s 20s;
+    position: absolute;
+
+}
+
+.PrimBen:hover {
+    transition: 1.5s ease-in-out;
+    -webkit-transform: translateX(-22.5vw) scaleX(0.5);
+}
+
+.Beneficio1 {
+    position: absolute;
+    right: 0;
+    height: 50vh;
+    width: 45vw;
+    padding: 1em;
+    text-align: center;
+}
+
+.container-fluid.SegBen {
+
+    margin: auto;
+    height: 50vh;
+    width: 90vw;
+    background-image: url("../img/Beneficio2.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    box-shadow: -0.5em 0.5em 8px rgba(22, 22, 26, 0.18);
+    transition: 0s 30s;
+    z-index: 10;
+    position: absolute;
+    top: 370vh;
+
+}
+
+.SegBen:hover {
+    transition: 3s ease-in-out;
+    -webkit-transform: translateX(22.5vw) scaleX(0.5);
+}
+
+.Beneficio2 {
+    position: absolute;
+    top: 50vh;
+    height: 50vh;
+    width: 48vw;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Diseño row Compra o CallToAction */
+
+.container-fluid.CTA {
+    margin: auto;
+    width: 50vh;
+    height: 50vh;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 1.5em 1.5em 20px 0 rgba(0, 0, 0, 0.18);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.CTA h3 {
+    margin-top: 2em;
+}
+
+.CTA img {
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/* X-Small devices (portrait phones, less than 576px)
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    /*Modificación General*/
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        padding-top: 1em;
+    }
+
+    .volver {
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+    /*Modificación Presentación*/
+    .container-fluid.ImgPres {
+        height: 50vh;
+        background-size: auto 100vh;
+        background-position: center left -200px;
+        border-radius: 0% 0% 0% 0;
+    }
+    
+    .Fila {
+        margin-top: 5vh;
+        justify-content: center;
+        height: 20vh;
+    }
+
+    /*Modificación Características*/
+    .carousel {
+        width: 80vw;
+    }
+    
+    .carousel-inner {
+        width: 80vw;
+    }
+    
+    .card {
+        height: 60vh;
+        width: 60vw;
+        margin: 0 0.5em;
+    }
+
+    /*Modificación Contacto*/
+    .Contacto h1{
+        text-align: center;
+    }
+
+    /*Modificación Beneficios*/
+    .container-fluid.PrimBen {
+        border-radius: 80% 0 0 0;
+    }
+    
+    .container-fluid.SegBen {
+        border-radius: 0 0 80% 0;
+    }
+
+    .PrimBen:hover {
+        transition: 1.5s ease-in-out;
+        -webkit-transform: scale(0.4) translateX(-40vh) translateY(-10vh);
+    }
+    
+    .SegBen:hover {
+        transition: 3s ease-in-out;
+        -webkit-transform: scale(0.4) translateX(40vh) translateY(-10vh);
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    /*Modificación General*/
+    h1 {
+        font-size: 4vw;
+    }
+
+    h3 {
+        margin-top: 2em;
+    }
+
+    .h3.titillium {
+        margin-top: 10em;
+    }
+
+    h4 {
+        font-size: 1.5vh;
+        line-height: 200%;
+    }
+
+    p {
+        font-size: 1.2vw;
+        padding-top: 1em;
+    }
+
+    .row.Barra {
+        position: relative;
+        z-index: 0;
+    }
+
+    .material-icons {
+        font-size: 8vh;
+    }
+
+    /*Modificación Principal*/
+
+    .container-fluid.Iconos {
+        margin: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        align-items: center;
+        display: block;
+    }
+
+    .Icono {
+        height: 15vh;
+        width: 15vh;
+        margin-left: 150%;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    #titulo {
+        height: 20vh;
+    }
+
+    /*Modificación Presentación*/
+    .container-fluid.ImgPres {
+        height: 90vh;
+        background-size: auto 100vh;
+        background-position: center center;
+        border-radius: 20% 0% 20% 0;
+    }
+
+    /*Modificación Características*/
+    .card{
+        height: 70vh;
+    }
+    .card img{
+        height:40vh;
+    }
+
+    /*Modificación Beneficios*/
+    .container-fluid.PrimBen {
+        height: 45vh;
+        border-radius: 100% 0 0 0;
+        background-size: 100vw auto;
+        margin-bottom: 0; 
+    }
+
+    .PrimBen:hover {
+        transition: 1.5s ease-in-out;
+        transform: translateX(-45vw);
+    }
+    
+    .Beneficio1 {
+        height: 45vh;
+    }
+    
+    .container-fluid.SegBen {
+        margin-top: 0;
+        top: 365vh;
+        height: 45vh;
+        border-radius: 0 0 100% 0;
+        background-size: 90vw auto;
+    }
+
+    .SegBen:hover {
+        transition: 3s ease-in-out;
+        transform: translateX(45vw);
+    }
+    
+    .Beneficio2 {
+        top: 45vh;
+        height: 45vh;
+        width: 45vw;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
